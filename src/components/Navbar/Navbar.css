@@ -23,7 +23,7 @@
 .left h1 {
     font-size: 2rem;
     cursor: pointer;
-    color: #fff; /* Ensuring the default text color */
+    color: #fff;
 }
 
 .checkBtn {
@@ -46,7 +46,7 @@
     padding: 10px 15px;
     font-size: 1.2rem;
     text-decoration: none;
-    color: #fff; /* Ensuring links remain white */
+    color: #fff;
     transition: all 0.3s ease-in-out;
 }
 
@@ -58,33 +58,60 @@
 
 /* Responsive Navbar */
 @media screen and (max-width: 805px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    
+    .left h1 {
+        font-size: 1.8rem;
+    }
+    
     .right ul {
         flex-direction: column;
-        background-color: rgba(36, 36, 36, 0.95); /* Semi-transparent effect */
-        width: 80%;
-        height: 60vh; /* Takes 60% height instead of full */
+        background-color: rgba(36, 36, 36, 0.95);
+        width: 250px; /* Fixed width instead of percentage */
+        height: auto; /* Auto height based on content */
         position: fixed;
-        top: 4rem;
-        right: -100%; /* Hidden initially */
+        top: 70px; /* Position below navbar */
+        right: -300px; /* Hidden initially, more than width to ensure it's fully off-screen */
         text-align: center;
         padding: 20px;
         border-radius: 10px;
-        transition: right 0.5s ease-in-out;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3);
     }
-
+    
     .right ul li {
         margin: 15px 0;
+        width: 100%;
     }
-
+    
     .right ul li a {
-        color: #fff; /* Keep text white */
+        display: block;
+        padding: 12px;
     }
-
+    
     .checkBtn {
         display: block;
     }
-
+    
     #check:checked ~ ul {
-        right: 10%; /* Slightly offset instead of taking full screen */
+        right: 20px; /* Small margin from edge of screen */
+    }
+}
+
+/* Additional breakpoint for extra small screens */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    .left h1 {
+        font-size: 1.5rem;
+    }
+    
+    .right ul {
+        width: 200px;
+        top: 60px;
     }
 }
