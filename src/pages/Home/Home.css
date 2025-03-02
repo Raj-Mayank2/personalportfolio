@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ovo', serif;
+    color: black;
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 20px;
+    background-color: #242424;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Ensures enough height */
+    text-align: center;
+    padding-top: 10vh; /* Adds spacing from the top */
+    line-height: 3rem;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+.image img {
+    width: 150px;  /* Adjust size as needed */
+    height: 150px;
+    object-fit: cover; /* Ensures the image scales properly */
+    border-radius: 50%; /* Makes the image circular */
+    border: 4px solid #242424; /* Border color matching your theme */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.image img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+.heading-3 {
+    color: #242424;
+    font-family: "Ovo", serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-bottom: 15px; /* Space below h3 */
+}
+
+.heading-1 {
+    color: #242424;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 85px;
+    font-family: "Ovo", serif;
+    margin-bottom: 20px; /* Space below h1 */
+}
+
+.desc p {
+    color: #242424;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    font-family: "Ovo", serif;
+    margin-top: 15px; /* Space above paragraph */
+    max-width: 800px; /* Keeps text readable */
+}
+
+
+
+.buttons {
+    display: flex;
+    gap: 15px; /* Adds space between buttons */
+    margin-top: 25px; /* Adds space above buttons */
+}
+
+.button1,
+.button2 {
+    border: 2px solid #A7A7A7;
+    border-radius: 8px;
+    padding: 12px 24px; /* More balanced padding */
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button1 {
+    background-color: #242424;
+    color: #ffffff;
+    border-color: #242424;
+    transition: all 0.3s ease-in-out;
+}
+
+.button1 i {
+    color: #ffffff;
+    transition: color 0.3s ease-in-out; /* Smooth color transition for icon */
+}
+
+.button1:hover {
+    background-color: #ffffff;
+    color: #242424;
+    border-color: #242424;
+}
+
+.button1:hover i {
+    color: #242424; /* Change icon color to match text on hover */
+}
+
+.button2 {
+    background-color: #ffffff;
+    color: #242424;
+    border-color: #242424;
+    transition: all 0.3s ease-in-out;
+}
+
+.button2 i {
+    color: #242424;
+    transition: color 0.3s ease-in-out;
+}
+
+.button2:hover {
+    background-color: #242424;
+    color: #ffffff;
+    border-color: #242424;
+}
+
+.button2:hover i {
+    color: #ffffff; /* Change icon color to match text on hover */
+}
+
