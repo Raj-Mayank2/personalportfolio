@@ -81,8 +81,8 @@ const Services = () => {
                 <i class="fas fa-cogs"></i>
             </div>
             <div class="service-content">
-                <h3 class="service-title">IT Consulting</h3>
-                <p class="service-description">Expert advice on technology solutions tailored to your business requirements.</p>
+                <h3 class="service-title">Graphic Designing</h3>
+                <p class="service-description">Tailored design advertisements for your companies</p>
                 <a href="#" class="service-link">Learn More</a>
             </div>
         </div>
