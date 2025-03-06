@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Home.css';
 import profile1 from '../../assets/profile1.jpg'
 const Home = () => {
-    const roles = ["Frontend Web Developer", "ML Enthusiast", "Aspiring Data Scientist"];
+    const roles = ["Frontend Web Developer","Graphic Designer", "ML Enthusiast", "Aspiring Data Scientist"];
     const [text, setText] = useState('');
     const [currentRole, setCurrentRole] = useState(0);
     const [index, setIndex] = useState(0);
@@ -35,7 +35,7 @@ const Home = () => {
             <h3 className='heading-3'>Hi, I'm Mayank Raj</h3>
             <h1 className='heading-1'>{text}<span className="cursor">|</span></h1>
             <div className='desc'>
-                <p>I am a frontend web developer with profound experience in working on various projects, be it personal or professional.</p>
+                <p>I am a frontend web developer and graphic designer with profound experience in working on various projects, be it personal or professional.</p>
             </div>
             <div className='buttons'>
                 <a href="https://www.linkedin.com/in/mayank-raj-1a4964217/" target="_blank" rel="noopener noreferrer">
