@@ -3,6 +3,7 @@ import './Projects.css'
 import repl from "../../assets/repl.png"
 import threads from "../../assets/threads.png"
 import movies from "../../assets/movies.png"
+import tomato from "../../assets/tomato.png"
 const Projects = () => {
   return (
     <div class="projects-container">
@@ -15,7 +16,7 @@ const Projects = () => {
         
         <div class="project-card">
             <div class="project-banner">
-                <img src="/api/placeholder/500/300" alt="Food Ordering Website"/>
+                <img src={tomato} alt="Food Ordering Website"/>
                 <div class="project-overlay"></div>
                 <span class="project-category">Web Development</span>
             </div>
