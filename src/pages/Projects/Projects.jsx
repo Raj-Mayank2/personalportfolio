@@ -38,6 +38,32 @@ const Projects = () => {
                 </div>
             </div>
         </div>
+      <div class="project-card">
+            <div class="project-banner">
+                <img src="/api/placeholder/500/300" alt="Food Ordering Website"/>
+                <div class="project-overlay"></div>
+                <span class="project-category">Web Development</span>
+            </div>
+            <div class="project-content">
+                <h3 class="project-title">Movie App</h3>
+                <p class="project-description">A fully responsive Movie App displaying the details of movie and their IMDB ratings</p>
+                <div class="project-meta">
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://raj-mayank2.github.io/Portfolio/" class="project-link" title="View Live Site">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        <a href="https://github.com/Raj-Mayank2/movieapp" class="project-link" title="View Source Code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         
         
         <div class="project-card">
